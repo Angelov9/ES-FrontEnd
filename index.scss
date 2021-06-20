@@ -1,0 +1,327 @@
+$border-color: rgb(211, 211, 211);
+$card-width-small: 450px;
+$card-width-bigger: 22%;
+$height-90: 90%;
+$width-95: 95%;
+$width-100: 100%;
+$profile-pic-circle: 50%;
+$profile-pic-width-height: 3em;
+$font-size-1: 1em;
+$font-size-05: 0.5em;
+$font-size-07: 0.7em;
+$font-size-08: 0.8em;
+$font-size-09: 0.9em;
+$font-size-15: 1.5em;
+
+$small-screen: 768px;
+$medium-screen: 992px;
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+}
+
+#modal {
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: white;
+  top: 100px;
+}
+
+#main {
+  margin: 0 auto;
+  width: 100%;
+  display: contents;
+}
+
+#buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 0.5em;
+  border: 1px solid $border-color;
+  width: $card-width-small;
+  justify-content: center;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  width: 400px;
+}
+
+.cardHeader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 220px;
+}
+
+.cardHeaderElements {
+  display: inline-block;
+}
+
+.cardHeaderMiddleElement {
+  margin-left: 10px;
+  font-size: $font-size-15;
+
+  span:first-child {
+    font-size: $font-size-1;
+    font-weight: bold;
+  }
+
+  span:last-child {
+    font-size: $font-size-07;
+  }
+}
+
+.cardHeaderMiddleElement2 {
+  margin-left: 5px;
+  font-size: $font-size-1;
+
+  span:first-child {
+    font-size: $font-size-08;
+    font-weight: bold;
+  }
+
+  span:last-child {
+    font-size: $font-size-05;
+  }
+}
+
+.profilePic {
+  width: $profile-pic-width-height;
+  height: $profile-pic-width-height;
+  border-radius: $profile-pic-circle;
+}
+
+.profilePic2 {
+  width: $profile-pic-width-height;
+  height: $profile-pic-width-height;
+  border-radius: $profile-pic-circle;
+}
+
+.source {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.cardMain {
+  height: 485px;
+  margin: auto;
+}
+
+.caption {
+  width: 300px;
+  display: block;
+}
+
+.imgSize {
+  width: 400px;
+  height: 400px;
+}
+
+.hrW {
+  width: 400px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.cardFooter * {
+  margin-left: 10px;
+}
+
+.imgAlign {
+  margin-left: 25px;
+}
+
+.loadMoreBtn {
+  background: dodgerblue;
+  border-radius: 5%;
+  width: 7.5em;
+  height: 2.7em;
+  border: none;
+  font-size: large;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-flex;
+}
+
+#content {
+  position: relative;
+  width: 400px;
+  display: inline-block;
+  height: 400px;
+  justify-self: center;
+}
+
+#content2 {
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  height: 400px;
+}
+
+.contentImage {
+  margin: 10px;
+  width: 380px;
+  height: 380px;
+}
+
+.caption2 {
+  width: 200px;
+  display: block;
+  align-items: center;
+  margin-left: 10px;
+  font-size: $font-size-09;
+}
+
+.darken {
+  background: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+@media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+  #main {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid $border-color;
+    width: $card-width-bigger * 2;
+    justify-content: center;
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: $width-95;
+  }
+
+  .cardHeaderMiddleElement {
+    margin-left: 5px;
+    font-size: $font-size-1;
+  }
+
+  .cardMain {
+    height: $height-90;
+    margin: auto;
+  }
+
+  .caption {
+    width: $width-95;
+    display: block;
+    font-size: $font-size-08;
+  }
+
+  .imgSize {
+    width: $width-100;
+  }
+
+  .hrW {
+    width: $width-100;
+  }
+
+  .imgAlign {
+    margin-left: 5px;
+  }
+
+}
+
+@media only screen and (min-width: $medium-screen) {
+
+  #main {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid $border-color;
+    width: $card-width-bigger;
+    justify-content: center;
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: $width-95;
+  }
+
+  .cardHeaderMiddleElement {
+    margin-left: 5px;
+    font-size: $font-size-1;
+  }
+
+  .cardMain {
+    height: $height-90;
+    margin: auto;
+  }
+
+  .caption {
+    width: $width-95;
+    display: block;
+    font-size: $font-size-08;
+  }
+
+  .imgSize {
+    width: $width-100;
+  }
+
+  .hrW {
+    width: $width-100;
+  }
+
+  .imgAlign {
+    margin-left: 5px;
+  }
+
+}

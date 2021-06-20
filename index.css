@@ -1,0 +1,303 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+}
+
+#modal {
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: white;
+  top: 100px;
+}
+
+#main {
+  margin: 0 auto;
+  width: 100%;
+  display: contents;
+}
+
+#buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 0.5em;
+  border: 1px solid lightgray;
+  width: 450px;
+  justify-content: center;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  width: 400px;
+}
+
+.cardHeader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 220px;
+}
+
+.cardHeaderElements {
+  display: inline-block;
+}
+
+.cardHeaderMiddleElement {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+.cardHeaderMiddleElement span:first-child {
+  font-size: 1em;
+  font-weight: bold;
+}
+.cardHeaderMiddleElement span:last-child {
+  font-size: 0.7em;
+}
+
+.cardHeaderMiddleElement2 {
+  margin-left: 5px;
+  font-size: 1em;
+}
+.cardHeaderMiddleElement2 span:first-child {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.cardHeaderMiddleElement2 span:last-child {
+  font-size: 0.5em;
+}
+
+.profilePic {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.profilePic2 {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.source {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.cardMain {
+  height: 485px;
+  margin: auto;
+}
+
+.caption {
+  width: 300px;
+  display: block;
+}
+
+.imgSize {
+  width: 400px;
+  height: 400px;
+}
+
+.hrW {
+  width: 400px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.cardFooter * {
+  margin-left: 10px;
+}
+
+.imgAlign {
+  margin-left: 25px;
+}
+
+.loadMoreBtn {
+  background: dodgerblue;
+  border-radius: 5%;
+  width: 7.5em;
+  height: 2.7em;
+  border: none;
+  font-size: large;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-flex;
+}
+
+#content {
+  position: relative;
+  width: 400px;
+  display: inline-block;
+  height: 400px;
+  justify-self: center;
+}
+
+#content2 {
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  height: 400px;
+}
+
+.contentImage {
+  margin: 10px;
+  width: 380px;
+  height: 380px;
+}
+
+.caption2 {
+  width: 200px;
+  display: block;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.darken {
+  background: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #main {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid lightgray;
+    width: 44%;
+    justify-content: center;
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 95%;
+  }
+
+  .cardHeaderMiddleElement {
+    margin-left: 5px;
+    font-size: 1em;
+  }
+
+  .cardMain {
+    height: 90%;
+    margin: auto;
+  }
+
+  .caption {
+    width: 95%;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .imgSize {
+    width: 100%;
+  }
+
+  .hrW {
+    width: 100%;
+  }
+
+  .imgAlign {
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid lightgray;
+    width: 22%;
+    justify-content: center;
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 95%;
+  }
+
+  .cardHeaderMiddleElement {
+    margin-left: 5px;
+    font-size: 1em;
+  }
+
+  .cardMain {
+    height: 90%;
+    margin: auto;
+  }
+
+  .caption {
+    width: 95%;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .imgSize {
+    width: 100%;
+  }
+
+  .hrW {
+    width: 100%;
+  }
+
+  .imgAlign {
+    margin-left: 5px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
